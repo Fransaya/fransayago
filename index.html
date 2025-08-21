@@ -5,6 +5,35 @@
     <link rel="icon" type="image/" href="/perfil-portfolio_2.jpg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Francisco Sayago</title>
+    <style>
+      /* Elimina el flash blanco inicial */
+      body,
+      #root {
+        background-color: #111827; /* dark theme */
+        margin: 0;
+        padding: 0;
+      }
+
+      /* Respeta las preferencias del sistema */
+      @media (prefers-color-scheme: light) {
+        body,
+        #root {
+          background-color: #ffffff;
+        }
+      }
+
+      @media (prefers-color-scheme: dark) {
+        body,
+        #root {
+          background-color: #111827;
+        }
+      }
+
+      /* Oculta el contenido hasta que React se monte */
+      #root:empty {
+        background-color: #111827;
+      }
+    </style>
   </head>
   <body>
     <div id="root"></div>

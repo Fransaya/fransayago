@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 /* Variables y estilos globales */
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -7,9 +11,6 @@
   font-weight: 400;
   width: 100vw;
   height: 100%;
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #121212;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
