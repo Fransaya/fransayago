@@ -2,6 +2,8 @@ import { ChevronDown } from "lucide-react";
 
 import Typewriter from "../ui/Typewriter";
 
+import "styled-jsx/css";
+
 import { Zap } from "lucide-react";
 // Tipos corregidos
 type HeroProps = {
