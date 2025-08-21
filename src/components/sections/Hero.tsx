@@ -8,11 +8,10 @@ import { Zap } from "lucide-react";
 // Tipos corregidos
 type HeroProps = {
   scrollToSection: (section: string) => void;
-  activeSection: string;
 };
 
 // Componente Hero CORREGIDO con animaciones
-const Hero = ({ scrollToSection, activeSection }: HeroProps) => {
+const Hero = ({ scrollToSection }: HeroProps) => {
   return (
     <section
       id="inicio"
@@ -120,7 +119,7 @@ const Hero = ({ scrollToSection, activeSection }: HeroProps) => {
         </div>
       </div>
 
-      <style jsx>{`
+      <style>{`
         @keyframes fadeInUp {
           from {
             opacity: 0;

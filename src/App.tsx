@@ -95,10 +95,7 @@ function App() {
         {/* Contenido principal */}
         <div className="pt-16">
           {/* Sección Hero */}
-          <Hero
-            scrollToSection={scrollToSection}
-            activeSection={activeSection}
-          />
+          <Hero scrollToSection={scrollToSection} />
 
           {/* Sección Sobre Mí */}
           <section
